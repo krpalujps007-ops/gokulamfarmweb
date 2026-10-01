@@ -42,3 +42,24 @@ if (sevaForm) {
     window.open(url, '_blank', 'noopener');
   });
 }
+
+
+// Subtle scroll-reveal animations for a calm, polished experience.
+const revealTargets = document.querySelectorAll(
+  'main > section, .stat, .mini-card, .photo-frame, .sponsor-card, .requirement-card, .donor-recognition, .donor-quote, .restoration-bank-card, .restoration-contact-card, .seva-form, .qr-placeholder'
+);
+revealTargets.forEach((el, i) => {
+  el.classList.add('reveal');
+  if (el.classList.contains('mini-card') || el.classList.contains('stat') || el.classList.contains('sponsor-card') || el.classList.contains('requirement-card')) {
+    el.classList.add('delay-' + ((i % 4) + 1));
+  }
+});
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+revealTargets.forEach(el => revealObserver.observe(el));
