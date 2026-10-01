@@ -44,3 +44,25 @@
 .bank-card .important-detail, .footer-contact .important-detail { font-family: "Times New Roman", Times, serif !important; font-size: 24px !important; font-weight: 700 !important; line-height: 1.25 !important; letter-spacing: .4px !important; color: var(--green) !important; display: inline-block; }
 .footer-contact .important-detail { color: #f0c875 !important; }
 @media(max-width:760px){ .bank-card .important-detail, .footer-contact .important-detail { font-size: 21px !important; } }
+
+
+/* Go-Seva enquiry form and WhatsApp */
+.seva-enquiry{background:#fffdf7;border-top:1px solid #e3d6bb;border-bottom:1px solid #e3d6bb}
+.seva-enquiry-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+.seva-enquiry-copy>p:not(.section-kicker){font:500 17px/1.5 var(--serif);max-width:500px;color:#5c564c}
+.btn-whatsapp{background:#1b8f45;color:#fff;margin-top:8px}
+.seva-form{background:#f8f0df;border:1px solid #dfd0b1;border-radius:16px;padding:25px;box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.seva-form label{display:block;font:600 15px var(--sans);color:var(--green);margin-bottom:14px}
+.seva-form label span{color:#a3630c}
+.seva-form label small{font-weight:400;color:#756e63}
+.seva-form input,.seva-form select,.seva-form textarea{display:block;width:100%;margin-top:6px;border:1px solid #d7c8a9;background:#fffdf8;border-radius:8px;padding:11px 12px;font:15px var(--sans);color:var(--ink);outline:none}
+.seva-form textarea{resize:vertical;min-height:95px}
+.seva-form input:focus,.seva-form select:focus,.seva-form textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(15,59,37,.08)}
+.form-submit{width:100%;cursor:pointer;border:0}
+.form-note{font:11px/1.4 var(--sans);color:#746d61;margin:10px 0 0;text-align:center}
+.floating-whatsapp{position:fixed;right:22px;bottom:22px;z-index:50;background:#1b8f45;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:25px;box-shadow:0 8px 22px rgba(0,0,0,.2);transition:.2s}
+.floating-whatsapp span{position:absolute;right:68px;white-space:nowrap;background:#173d2b;color:#fff;border-radius:7px;padding:7px 10px;font:600 12px var(--sans);opacity:0;transform:translateX(5px);pointer-events:none;transition:.2s}
+.floating-whatsapp:hover{transform:translateY(-2px)}
+.floating-whatsapp:hover span{opacity:1;transform:none}
+@media(max-width:760px){.seva-enquiry-grid{grid-template-columns:1fr;gap:25px}.form-row{grid-template-columns:1fr}.seva-form{padding:20px}.floating-whatsapp{right:15px;bottom:15px;width:54px;height:54px}.floating-whatsapp span{display:none}}
