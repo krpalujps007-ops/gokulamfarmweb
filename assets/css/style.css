@@ -14,3 +14,33 @@
 
 /* Important donation/contact details */
 .important-detail{font-weight:800;letter-spacing:.3px;}
+
+/* FINAL: prominent donation account numbers and contact number */
+.important-detail,
+.bank-card .important-detail,
+.footer-contact .important-detail {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.35px !important;
+  color: var(--green) !important;
+}
+
+.footer-contact .important-detail {
+  color: #f0c875 !important;
+}
+
+@media (max-width: 760px) {
+  .important-detail,
+  .bank-card .important-detail,
+  .footer-contact .important-detail {
+    font-size: 19px !important;
+  }
+}
+
+
+/* FINAL PROMINENT ACCOUNT AND CONTACT DETAILS */
+.bank-card .important-detail, .footer-contact .important-detail { font-family: "Times New Roman", Times, serif !important; font-size: 24px !important; font-weight: 700 !important; line-height: 1.25 !important; letter-spacing: .4px !important; color: var(--green) !important; display: inline-block; }
+.footer-contact .important-detail { color: #f0c875 !important; }
+@media(max-width:760px){ .bank-card .important-detail, .footer-contact .important-detail { font-size: 21px !important; } }
