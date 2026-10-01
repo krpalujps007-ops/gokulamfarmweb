@@ -6,3 +6,12 @@
 
 /* Important donation/contact details */
 .important-detail{font-weight:800;letter-spacing:.3px;}
+
+
+/* Important donation and contact details */
+.important-detail {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--green);
+  letter-spacing: 0.4px;
+}
