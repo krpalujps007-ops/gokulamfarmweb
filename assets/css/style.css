@@ -10,3 +10,7 @@
 /* Donation and contact details */
 .donate-copy{min-width:0}.bank-details{margin-top:24px}.bank-details h3{font:700 22px var(--serif);margin:0 0 10px;color:var(--green)}.bank-card{background:#fffaf1;border:1px solid #dfd2bd;border-radius:12px;padding:14px 16px;margin-top:10px;box-shadow:0 3px 10px #5b41160d}.bank-card strong{font:700 18px var(--serif);color:var(--green)}.bank-card p{font:13px/1.45 var(--serif);margin:5px 0}.footer-contact{display:flex;flex-direction:column;gap:4px;font-family:var(--serif);font-size:13px}.footer-contact strong{font-size:18px}.footer-contact a{color:#f0c875;font-weight:700}.footer-contact span{color:#d9e2db}
 @media(max-width:800px){.footer-contact{margin-top:5px}}
+
+
+/* Important donation/contact details */
+.important-detail{font-weight:800;letter-spacing:.3px;}
